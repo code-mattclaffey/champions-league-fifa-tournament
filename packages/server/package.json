@@ -1,0 +1,14 @@
+{
+  "name": "@champions-league-tournament/server",
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "compile": "tsc",
+    "postinstall": "npm run compile",
+    "start": "npm run compile && node ./dist/index.js"
+  },
+  "dependencies": {
+    "@apollo/server": "^4.0.0",
+    "graphql": "^16.6.0"
+  }
+}

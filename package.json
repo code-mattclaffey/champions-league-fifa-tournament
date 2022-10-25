@@ -1,0 +1,32 @@
+{
+  "name": "champions-league-tournament",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev:www": "cd ./packages/www && yarn dev",
+    "build:www": "cd ./packages/www && yarn build",
+    "dev:server": "cd ./packages/server && yarn start",
+    "build:server": "cd ./packages/server && yarn compile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/code-mattclaffey/champions-league-tournament.git"
+  },
+  "author": "Matthew Claffey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/code-mattclaffey/champions-league-tournament/issues"
+  },
+  "homepage": "https://github.com/code-mattclaffey/champions-league-tournament#readme",
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@types/node": "^18.8.5"
+  },
+  "dependencies": {
+    "axios": "^1.1.3"
+  }
+}
